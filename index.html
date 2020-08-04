@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript">
+        var myClientWidth = document.documentElement.clientWidth;
+        /*获取当前屏幕的可视宽度*/
+        //*如果当前屏幕的宽度 小于或等于 540 我们就重新计算得到字体大小*/
+        /*如果当前屏幕的宽度 大于 540 我们就设置当前的字体大小值为54px*/
+        if(myClientWidth<=540){
+        document.documentElement.style.fontSize = myClientWidth /10 + "px";
+        /*把宽度除以10 得到字体的大小*/}
+        else{
+            document.documentElement.style.fontSize = 54+"px"
+        }
+
+        /*浏览器在缩放宽度的时候，会帮你重新设置html标签中的字体大小*/
+        window.onresize = function () {//*当浏览器的大小改变的时候，会重新执行下面的代码 重新计算*/
+            var myClientWidth = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = myClientWidth /10 + "px";
+        };
+    </script>
+</head>
+<body>
+<header>
+    <div class="box_banner">
+        <a href="" class="banner">
+            <img src="css/img/jljccc.png">
+        </a>
+        <a href="" class="logo"></a>
+       <span class="select">上海</span>
+        <a href="" class="tel">
+            <i class="icon1"></i>
+            400-085-2093
+        </a>
+        <span class="user_login"></span>
+        <div class="search_box">
+            <input type="text" placeholder=" 输入您想找的区域/商圈或者写字楼名称">
+            <span></span>
+        </div>
+    </div>
+</header>
+<main>
+    <ul class="navList">
+        <li>
+        <a href="">
+            <span class="bgColorA">
+                <i class="iconLease"></i>
+            </span>
+            写字楼出租
+        </a>
+    </li>
+        <li>
+            <a href="">
+            <span class="bgColorB">
+                <i class="iconShared"></i>
+            </span>
+                共享办公
+            </a>
+        </li>
+        <li>
+            <a href="">
+            <span class="bgColorC">
+                <i class="iconOriginality"></i>
+            </span>
+                创意园区
+            </a>
+        </li>
+        <li>
+            <a href="">
+            <span  class="bgColorD">
+                <i class="iconBuildSell"></i>
+            </span>
+                写字楼出售
+            </a>
+        </li>
+        <li>
+            <a href="">
+            <span  class="bgColorE">
+                <i class="iconHelpFind"></i>
+            </span>
+                帮你找房
+            </a>
+        </li>
+        <li>
+        <a href="">
+            <span class="bgColorF">
+                <i class="iconDelivery"></i>
+            </span>
+            投放房源
+        </a>
+    </li>
+        <li>
+            <a href="">
+            <span class="bgColorG">
+                <i class="iconShopping"></i>
+            </span>
+                好租商城
+            </a>
+        </li>
+        <li>
+            <a href="">
+            <span class="bgColorH">
+                <i class="iconWelfare"></i>
+            </span>
+                会员福利
+            </a>
+        </li>
+    </ul>
+    <div class="spaceComm"></div>
+    <div class="headlines">
+        <h2 class="headlines_title">行业头条</h2>
+        <ul class="headlines_list">
+            <li>
+                <a href="">北京：闲置商场写字楼可改成职工集体宿舍</a>
+            </li>
+            <li>
+                <a href="">碧桂园“摇中”长沙高新区商住地 限房价竞地价</a>
+            </li>
+            <li>
+                <a href="">杭州政府综合办公楼将变身延中大楼 打造无边界办公园区</a>
+            </li>
+            <li>
+                <a href="">北京：闲置商场写字楼可改成职工集体宿舍</a>
+            </li>
+            <li>
+                <a href="">碧桂园“摇中”长沙高新区商住地 限房价竞地价</a>
+            </li>
+            <li>
+                <a href="">杭州政府综合办公楼将变身延中大楼 打造无边界办公园区</a>
+            </li>
+        </ul>
+    </div>
+    <div class="spaceComm"></div>
+    <div class="coreWrap">
+        <h2 class="topCore">核心商圈</h2>
+        <ul class="listCore">
+            <li>
+                <a href="">
+                    <img src="css/img/9fd7f7dced929f1e641e326d3171b670.jpg" >
+                    <i class="maskCore"></i>
+                    <span>南京西路/江宁路</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="css/img/6aa5a8bed19589ce5e2b0a09093cf38a.jpg" >
+                    <i class="maskCore"></i>
+                    <span>八佰伴</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="css/img/f42612592c0d4026952cb42197086f95.jpg" >
+                    <i class="maskCore"></i>
+                    <span>陆家嘴</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="css/img/038e68c213fca94b85da1de843184861.jpg">
+                    <i class="maskCore"></i>
+                    <span>人民广场</span>
+                </a>
+            </li>
+        </ul>
+        <div class="areaTop">
+             区域
+            <a href="" class="nearby">
+                <i class="nearby_icon"></i>
+                附近写字楼
+            </a>
+        </div>
+        <ul class="listarer">
+            <li>
+                <a href="">全部</a>
+            </li>
+            <li>
+                <a href="">浦东</a>
+            </li>
+            <li>
+                <a href="">浦东</a>
+            </li>
+            <li>
+                <a href="">浦东</a>
+            </li>
+            <li>
+                <a href="">浦东</a>
+            </li>
+            <li>
+                <a href="">浦东</a>
+            </li>
+            <li>
+                <a href="">浦东</a>
+            </li>
+            <li>
+                <a href="">浦东</a>
+            </li>
+            <li>
+                <a href="">浦东</a>
+            </li>
+            <li>
+                <a href="">浦东</a>
+            </li>
+            <li>
+                <a href="">浦东</a>
+            </li>
+            <li>
+                <a href="">更多>> </a>
+            </li>
+        </ul>
+    </div>
+    <div class="spaceComm"></div>
+    <div class="registerWrap">
+        <a href="">
+            <img src="css/img/register_09.jpg">
+        </a>
+    </div>
+    <div class="coreWrap">
+        <h2 class="topCore">
+            热门专题
+            <a href="" class="more">更多>> </a>
+        </h2>
+        <div class="hotTopic">
+            <div class="hotTopicLeft">
+            <a href="">
+                <img src="css/img/shared_office.jpg">
+                <i class="maskCore"></i>
+                <span>共享办公</span>
+            </a>
+            </div>
+            <ul class="listCore">
+            <li>
+                <a href="">
+                    <img src="css/img/980c0071a4a1c19f4500ba3333c0f3e3.jpg">
+                    <i class="maskCore"></i>
+                    <span>地铁10分钟</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="css/img/fc5544c8932c6725c3b7da0cd0b18d12.jpg">
+                    <i class="maskCore"></i>
+                    <span>热门楼盘</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="css/img/027e5ab33f9f5708f0f1897ca9c200a6.jpg">
+                    <i class="maskCore"></i>
+                    <span>带办公家具</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="css/img/2eea0aad40fe5137ab11c221648d3b86.jpg">
+                    <i class="maskCore"></i>
+                    <span>知名物业</span>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="spaceComm"></div>
+    <div class="entrustWrap">
+        <img src="css/img/entrust_09.jpg">
+        <p class="tipEntrust">专业经纪人帮你找办公室</p>
+        <div class="entrustForm">
+            <input type="text" placeholder="请输入手机号码，顾问一对一服务">
+            <span class="btSubEntrust">马上找房</span>
+        </div>
+        <p class="tipSmallEntrust">已有<span>306042</span>人委托好租找到满意办公室</p>
+    </div>
+    <div class="spaceComm"></div>
+    <div class="coreWrap">
+        <h2 class="topCore">
+            资讯中心
+            <a href="" class="more">更多>> </a>
+        </h2>
+        <a href="" class="hotMain">
+            <img src="css/img/227bd89bc3f6c9230e44f0b8ba1f164d.jpg">
+            <div class="hotMainTxt">
+                <h3>C轮再获数亿投资 好租如何从办公租赁转向商办资产运营</h3>
+                <div class="hotMainCon">
+
+                    如果说，创业大潮下越来越多的中小企业的不断涌现，为好
+                    租的快速发展奠定了基础，那么此次国家队的进入，为其从1到2的跨越提供了更
+                    多可能性。
+                </div>
+            </div>
+        </a>
+        <ul class="listHotTopic">
+            <li>
+                <a href="">
+                    <p>好租发布2018年一季度商办数据  一线城市写字楼迎去化高峰</p>
+                    <span>05-16</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>
+                        不断升级中的产业园 商办地产崛起新势力
+                    </p>
+                    <span>05-16</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>不断升级中的产业园 商办地产崛起新势力</p>
+                    <span>05-16</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>
+                        活动｜生活方式、二次元、剧植入……千人千面的品牌创意怎么做？
+                    </p>
+                    <span>05-16</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="spaceComm"></div>
+    <div class="coreWrap">
+        <h2 class="topCore">客户说</h2>
+        <div class="customerScroll">
+            <img src="css/img/mobike.jpg">
+            <div class="listCustomer_Txt">
+                <h2>
+                    <b>摩拜单车</b>
+                    杨浦-创智天地环廊
+                </h2>
+                <p>
+                    本来以为办公选址会比较复杂，没想到好租的顾问在接到委托，详细了解我们
+                    的要求之后，很快就把事情解决了。不仅办事效率高，整个过程的服务态度也
+                    特别好，给提供了我们很棒的服务体验。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="spaceComm"></div>
+    <ul class="friendWrap">
+        <li><img src="css/img/baiduLogo.jpg"></li>
+        <li><img src="css/img/tuniuLogo.jpg"></li>
+        <li><img src="css/img/zhongtaiLogo.jpg"></li>
+        <li><img src="css/img/dekorLogo.jpg"></li>
+        <li><img src="css/img/partnerLogo.jpg"></li>
+    </ul>
+    <div class="mallPos">
+        <a href="">
+            <img src="css/img/through_beijng.jpg">
+        </a>
+    </div>
+    <footer>
+        <div class="bgFoot">
+           <ul class="listfoot">
+              <li>
+                  <i class="iconFoottrue"></i>
+                  所有房源100%实勘
+              </li>
+               <li>
+                   <i class="iconFootWide"></i>
+                   所有房源100%实勘
+               </li>
+               <li>
+                   <i class="iconFootExpert"></i>
+                   所有房源100%实勘
+               </li>
+               <li>
+                   <i class="iconFootWhole"></i>
+                   所有房源100%实勘
+               </li>
+           </ul>
+            <div class="footMain">
+                <i class="iconFootLogo"></i>
+                <a href="" class="telFoot">
+                    <i>免费咨询</i>
+                    400-085-2093
+                </a>
+                <a href="" class="about_haozu">
+                    关于好租
+                </a>
+                <div class="footMainTxt">
+                    <p>
+                        ©2015-2018 北京好租科技发展有限公司
+                        <a href="">京ICP备16019026号</a>
+                    </p>
+                    <p>
+                        <a href="">京公网安备 11010802025685号</a>
+                    </p>
+                    <p>
+                        地址：北京市海淀区上地软件园南路57号八维学院
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="areaSleWrap">
+            <div class="crumbArea">
+                <a href="">好租网</a>
+                >
+                <a href="">上海写字楼出租</a>
+            </div>
+            <div class="navAreaSel">
+                <span class="on">区域写字楼</span>
+                <span>商圈写字楼</span>
+            </div>
+            <ul class="listAreaSel">
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">浦东写字楼</a></li>
+                <li><a href="">上海周边写字楼</a></li>
+            </ul>
+        </div>
+    </footer>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/zuxiezilou.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript">
+        var myClientWidth = document.documentElement.clientWidth;
+        if(myClientWidth<=540){
+            document.documentElement.style.fontSize = myClientWidth /10 + "px"}
+        else{document.documentElement.style.fontSize = 54+"px"}
+        window.onresize = function () {
+            var myClientWidth = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = myClientWidth /10 + "px";
+        };
+    </script>
+</head>
+<body>
+<header class="headSec">
+    <a href="">
+        <i class="logo"></i>
+    </a>
+    <span class="select">上海</span>
+</header>
+
+</body>
+</html>
